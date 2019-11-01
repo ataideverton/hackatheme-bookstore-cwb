@@ -12,7 +12,7 @@
     ]
   },
   "flex-layout.row#footer-1-desktop": {
-    "children": [
+    "children": [ 
       "flex-layout.col#footer-3-desktop",
       "flex-layout.col#footer-4-desktop",
       "flex-layout.col#footer-5-desktop",
@@ -24,15 +24,10 @@
   },
   "flex-layout.col#footer-3-desktop":{
     "children": [
-      "logo#desktop",
-      "rich-text#about-store"
+      "logo#desktop"
     ]
   },
-  "rich-text#about-store":{
-    "props":{
-      "text": "All right reserved. Pickup your product in our B&M Store - Address: 123 St., 123 - New York - NY. Phone: 55 555-5555"
-    }
-  },
+
   "flex-layout.col#footer-4-desktop":{
     "children":[
       "rich-text#institutional-title",
@@ -135,9 +130,10 @@
       "blockClass":"tright"
     }
   },
+
   "rich-text#footer-bottom":{
     "props":{
-      "text": "The BookStore is the complete theme recomended for bookstore and grosseries. COD. 1234567889"
+      "text": "All right reserved. Pickup your product in our B&M Store - Address: 123 St., 123 - New York - NY. Phone: 55 555-5555. The BookStore is the complete theme recomended for bookstore and grosseries. COD. 1234567889"
     }
   },
   "image#vtex":{
