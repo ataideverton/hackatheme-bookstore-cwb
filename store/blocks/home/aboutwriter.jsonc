@@ -1,0 +1,90 @@
+{
+    "store.custom#writer": {
+      "blocks": [
+        "flex-layout.row#writer1",
+        "flex-layout.row#writer2"
+
+      ]
+    },
+  
+    "flex-layout.row#writer1": {
+      "children": [
+        "flex-layout.row#spacer",
+        "flex-layout.col#writer-image",
+        "flex-layout.col#writer-text",
+        "flex-layout.row#spacer"
+      ],
+      "props":{
+        "blockClass": "institutionalRow"
+      }
+    },
+    "flex-layout.row#spacer":{
+        "props":{
+            "width": "10%"
+        }
+    },
+    "flex-layout.col#writer-image":{
+        "children":[
+            "image#writer"
+        ],
+        "props":{
+            "blockClass": "writerImage"
+        }
+    },
+    "flex-layout.col#writer-text":{
+        "children":[
+            "rich-text#writerText"
+        ],
+        "props":{
+            "blockClass": "rightColInst"
+        }
+    },
+
+    "rich-text#writerText":{
+        "props":{
+            "text": "### SEU TÍTULO AQUI"
+        }
+    },
+  
+    "image#writer": {
+      "props": {
+        "src": "https://i.imgur.com/c75gzL3.jpg",
+        "blockClass": "writerPhoto"
+      }
+    },
+
+    "flex-layout.row#writer2":{
+        "children":[
+            "flex-layout.row#spacer",
+            "shelf#writer",
+            "flex-layout.row#spacer"
+
+        ]
+    },
+
+    "shelf#writer":{
+        "blocks": ["product-summary.shelf"],
+        "props": {
+          "orderBy": "OrderByTopSaleDESC",
+          "productList": {
+            "maxItems": 10,
+            "itemsPerPage": 3,
+            "scroll": "BY_PAGE",
+            "arrows": true,
+            "showTitle":true,
+            "paginationDotsVisibility": "hidden",
+            "titleText": "Writer Reccomendations"
+          }
+        }
+      },
+
+    
+
+  
+    "rich-text#about-us": {
+      "props": {
+        "text": "**Optimized store framework** \n Free your front-end with our React + Node store framework. Improve usability and SEO, while driving more conversion with modular components, single page applications, and a ready-for-PWA structure. \n **Multi-currency and language** \n Go international with multiple storefronts to support different languages and easily manage local currencies and payment conditions. \n **Serverless development platform** \n Reduce loading time, improve usability, and make the best out of SEO. Developing scalable components with a comprehensive, easy-to-use toolset, you can build stores faster than ever.",
+        "blockClass": "about"
+      }
+    }
+  }
