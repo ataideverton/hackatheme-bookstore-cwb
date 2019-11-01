@@ -56,7 +56,7 @@
   },
   "header-row#3-desktop": {
     "children": [
-      "drawer#drawer-desktop",
+      "vtex.menu@2.x:menu#main-menu",
       "header-spacer",
       "search-bar",
       "header-spacer"
@@ -108,11 +108,6 @@
       "menu#menu-drawer-mobile"
     ]
   },
-  "drawer#drawer-desktop": {
-    "children": [
-      "menu#menu-drawer-desktop"
-    ]
-  },
   "header-row#2-mobile":{
     "children": [
       "search-bar"
@@ -134,11 +129,9 @@
     }
   },
 
-  "menu#menu-drawer-desktop": {
+  "vtex.menu@2.x:menu#main-menu": {
     "children": [
-      "menu-item#notebooks-pens",
-      "menu-item#books",
-      "menu-item#office-supplies"
+      "menu-item#desktop-menu"
     ],
     "props": {
       "orientation": "vertical"
