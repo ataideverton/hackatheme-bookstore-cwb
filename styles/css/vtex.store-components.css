@@ -32,6 +32,14 @@
   font-size: 26px;
 }
 
+.specificationsTitle{
+  display: none;
+}
+
+.specificationsTableContainer{
+  padding: 0px 0px 0px 0px;
+}
+
 .inputGroup {
   padding-bottom: 4px;
   border-bottom: 2px solid #fff;
