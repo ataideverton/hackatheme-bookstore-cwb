@@ -70,7 +70,6 @@
   },
   "flex-layout.col#content": {
     "children": [
-      "flex-layout.row#searchtitle",
       "flex-layout.row#searchinfo",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
