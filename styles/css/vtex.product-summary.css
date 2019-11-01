@@ -4,9 +4,16 @@
     font-family: quicksand;
     font-weight: 700;
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .sellingPrice{
     font-family: quicksand;
     font-weight: 700;
+}
+
+.nameContainer{
+    padding:12px 0px
 }
