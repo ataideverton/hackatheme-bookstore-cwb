@@ -21,7 +21,7 @@
 
   "header-row#1-desktop": {
     "children": [
-      // "notification.bar#home"
+      "notification.bar#home"
     ],
     "props": {
       "fullWidth": "true"
@@ -51,7 +51,7 @@
       "title": "Logo",
       "href": "/",
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "width": "180px"
     }
   },
   "header-row#3-desktop": {
@@ -120,9 +120,10 @@
 
   "menu#menu-drawer-mobile": {
     "children": [
-      "menu-item#notebooks",
+      "menu-item#notebooks-pens",
       "menu-item#books",
-      "menu-item#office-supplies"
+      "menu-item#office-supplies",
+      "vtex.menu@2.x:menu#websites"
     ],
     "props": {
       "orientation": "vertical"
@@ -143,7 +144,7 @@
       "title": "Logo",
       "href": "/",
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "120"
+      "width": "120px"
     }
   }
 }

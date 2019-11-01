@@ -125,7 +125,7 @@
         "itemsPerPage": 5,
         "scroll": "ONE_BY_ONE",
         "arrows": true,
-        "titleText":"Se você gostou desse, pode se interessar por:",
+        "titleText":"Explore more Items",
         "paginationDotsVisibility": "hidden"
       },
     "height":"100"
@@ -148,42 +148,69 @@
   "tab-list.item#home1": {
     "props": {
       "tabId": "specifications",
-      "label": "Especificações Técnicas",
+      "label": "Specifications",
       "defaultActiveTab": true
     }
   },
   "tab-list.item#home2": {
     "props": {
+      "tabId": "author",
+      "label": "O Autor"
+    }
+  },
+  "tab-list.item#home3": {
+    "props": {
       "tabId": "critics",
-      "label": "A critica"
+      "label": "Critica"
     }
   },
   "tab-content#home": {
     "children": [
       "tab-content.item#home1",
-      "tab-content.item#home2"
+      "tab-content.item#home2",
+      "tab-content.item#home3"
     ]
   },
   "tab-content.item#home1": {
     "props": {
       "tabId": "specifications"
     },
-    "children":["product-specifications"]
+    "children":[
+      "product-specifications"
+    ]
   },
   "tab-content.item#home2": {
     "children": [
-      "shelf#home",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "product-specifications#author"
     ],
     "props": {
-      "tabId": "home2"
+      "tabId": "author"
+    }
+  },
+  "tab-content.item#home3":{
+    "children":[
+      "product-specifications#critics"
+    ],
+    "props":{
+      "tabId": "critics"
     }
   },
 
-
+  "product-specifications#editorial":{
+    "props":{
+      "visibleSpecifications":["Editorial"]
+    }
+  },
+  "product-specifications#author":{
+    "props":{
+      "visibleSpecifications":["Autor"]
+    }
+  },
+  "product-specifications#critics":{
+    "props":{
+      "visibleSpecifications":["Critica"]
+    }  
+  },
   "share#default": {
     "props": {
       "social": {

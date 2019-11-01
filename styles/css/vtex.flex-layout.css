@@ -2,7 +2,6 @@
   height: auto !important;
 }
 .flexRow--inverted{
-  background:#eee;
   margin:1rem 0;
 }
 .flexColChild--tright{
@@ -14,7 +13,7 @@
 }
 
 .flexCol--rightColInst{
-  padding-left: 20px;;
+  padding-left: 20px;
 }
 
 .flexCol--productCountCol {

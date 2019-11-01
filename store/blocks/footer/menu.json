@@ -4,69 +4,69 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
+      "menu-item#about-us",
+      "menu-item#shop",
+      "menu-item#policy",
+      "menu-item#payment-delivery"
     ]
   },
-  "menu-item#news": {
+  "menu-item#about-us": {
     "props": {
-      "id": "menu-item-news",
+      "id": "menu-item-about-us",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/about-us",
         "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
+        "tagTitle": "About Us",
+        "text": "About Us"
       }
     }
   },
-  "menu-item#blackfriday": {
+  "menu-item#shop": {
     "props": {
-      "id": "menu-item-black-friday",
+      "id": "menu-item-shop",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/shop",
         "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
+        "tagTitle": "Shop",
+        "text": "Shop"
       }
     }
   },
-  "menu-item#sale": {
+  "menu-item#policy": {
     "props": {
-      "id": "menu-item-sale",
+      "id": "menu-item-policy",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/policy",
         "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "Return and Refound Policy",
+        "text": "Return and Refound Policy"
       }
     }
   },
-  "menu-item#personalization": {
+  "menu-item#payment-delivery": {
     "props": {
-      "id": "menu-item-personalization",
+      "id": "menu-item-payment-delivery",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/payment-delivery",
         "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
+        "tagTitle": "Payment & Delivery",
+        "text": "Payment & Delivery"
       }
     }
   }

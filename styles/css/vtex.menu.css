@@ -1,7 +1,21 @@
-
+.menuItem--all-categories .styledLinkContainer .styledLink{
+    color:#fff;
+}
+.submenu .styledLinkContainer .styledLink{
+    color:#000;
+    font-size:1rem;
+}
 .menuItem--writerEmphasis{
     background: #8abbe8;
     margin: 3px;
     border-radius: 5px;
     border: 5px;
+}
+
+.menuItem:nth-child(odd):hover{
+    background:lightgray;
+}
+
+.menuItem:nth-child(even):hover{
+    background:lightgray;
 }

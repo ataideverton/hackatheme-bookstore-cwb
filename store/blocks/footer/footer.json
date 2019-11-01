@@ -144,23 +144,21 @@
 
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
+      "flex-layout.row#1-footer-mobile"
     ]
   },
   "flex-layout.row#1-footer-mobile": {
-    "children": [
-      
-    ]
-  },
-  "flex-layout.row#2-footer-mobile": {
     "children": [
       "flex-layout.col#footer-1-mobile"
     ]
   },
   "flex-layout.col#footer-1-mobile": {
     "children": [
+      "rich-text#payment-title",
       "accepted-payment-methods",
+      "rich-text#security-title",
+      "image#security",
+      "rich-text#social-title",
       "social-networks",
       "rich-text#footer-mobile"
     ]
