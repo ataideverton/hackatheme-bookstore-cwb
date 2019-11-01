@@ -6,7 +6,8 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "tab-layout#home"
+      "tab-layout#home",
+      "shelf#shelfExample"
     ]
   },
 
@@ -27,12 +28,19 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["flex-layout.col#stack","product-description" ,"flex-layout.col#spacer","flex-layout.col#right-col"]
+    "children": ["flex-layout.col#firstSpacer","flex-layout.col#stack","flex-layout.col#spacer","flex-layout.col#right-col","flex-layout.col#firstSpacer"]
+  },
+
+
+  "flex-layout.col#firstSpacer":{
+    "props":{
+      "width":"5%" 
+    }
   },
 
   "flex-layout.col#spacer":{
     "props":{
-      "width":"10%" 
+      "width":"15%" 
     }
   },
   
@@ -64,7 +72,9 @@
   },
   "product-images": {
     "props": {
-      "displayThumbnailsArrows": true
+      "displayThumbnailsArrows": true,
+      "position":"right"
+
     }
   },
   "flex-layout.col#right-col": {
@@ -78,7 +88,7 @@
       "product-price#product-details",
       "product-separator",
       "product-quantity",
-      "product-identifier.product",
+      "product-description",
       "sku-selector",
       "product-assembly-options",
       "flex-layout.row#buy-button",
@@ -106,7 +116,7 @@
     "children": ["buy-button"]
   },
   
-  "shelf#firstRow":{
+  "shelf#shelfExample":{
     "blocks": ["product-summary.shelf"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
@@ -115,7 +125,7 @@
         "itemsPerPage": 5,
         "scroll": "ONE_BY_ONE",
         "arrows": true,
-        "titleText":"Quem comprou tambem visualizou...",
+        "titleText":"Se você gostou desse, pode se interessar por:",
         "paginationDotsVisibility": "hidden"
       },
     "height":"100"
@@ -126,20 +136,19 @@
       "tab-list#home",
       "tab-content#home"
     ],
-    "props": {
-      "blockClass": "home"
+    "props": {  
+      "blockClass": "tabList"
     }
   },
   "tab-list#home": {
     "children": [
-      "tab-list.item#home1",
-      "tab-list.item#home2"
+      "tab-list.item#home1"
       ]
   },
   "tab-list.item#home1": {
     "props": {
-      "tabId": "author",
-      "label": "O Autor",
+      "tabId": "specifications",
+      "label": "Especificações Técnicas",
       "defaultActiveTab": true
     }
   },
@@ -157,8 +166,9 @@
   },
   "tab-content.item#home1": {
     "props": {
-      "tabId": "home1"
-    }
+      "tabId": "specifications"
+    },
+    "children":["product-specifications"]
   },
   "tab-content.item#home2": {
     "children": [
