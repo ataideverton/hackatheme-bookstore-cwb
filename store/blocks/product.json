@@ -1,13 +1,18 @@
 {
+
+
+
   "store.product": {
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "shelf.relatedProducts",
-      "product-reviews",
-      "product-questions-and-answers"
+      "tab-layout#home",
+      "shelf#shelfExample"
     ]
   },
+
+
+
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4
@@ -23,9 +28,22 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+    "children": ["flex-layout.col#firstSpacer","flex-layout.col#stack","flex-layout.col#spacer","flex-layout.col#right-col","flex-layout.col#firstSpacer"]
   },
 
+
+  "flex-layout.col#firstSpacer":{
+    "props":{
+      "width":"5%" 
+    }
+  },
+
+  "flex-layout.col#spacer":{
+    "props":{
+      "width":"15%" 
+    }
+  },
+  
   "stack-layout": {
     "children": [
       "flex-layout.row#product-image",
@@ -45,7 +63,7 @@
   "flex-layout.col#stack": {
     "children": ["stack-layout"],
     "props": {
-      "width": "60%",
+      "width": "45%",
       "rowGap": 0
     }
   },
@@ -54,7 +72,9 @@
   },
   "product-images": {
     "props": {
-      "displayThumbnailsArrows": true
+      "displayThumbnailsArrows": true,
+      "position":"right"
+
     }
   },
   "flex-layout.col#right-col": {
@@ -68,7 +88,7 @@
       "product-price#product-details",
       "product-separator",
       "product-quantity",
-      "product-identifier.product",
+      "product-description",
       "sku-selector",
       "product-assembly-options",
       "flex-layout.row#buy-button",
@@ -77,6 +97,9 @@
       "share#default"
     ]
   },
+
+
+
 
   "product-price#product-details": {
     "props": {
@@ -92,6 +115,74 @@
     },
     "children": ["buy-button"]
   },
+  
+  "shelf#shelfExample":{
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText":"Se você gostou desse, pode se interessar por:",
+        "paginationDotsVisibility": "hidden"
+      },
+    "height":"100"
+    }
+  },
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ],
+    "props": {  
+      "blockClass": "tabList"
+    }
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#home1"
+      ]
+  },
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "specifications",
+      "label": "Especificações Técnicas",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "critics",
+      "label": "A critica"
+    }
+  },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#home1",
+      "tab-content.item#home2"
+    ]
+  },
+  "tab-content.item#home1": {
+    "props": {
+      "tabId": "specifications"
+    },
+    "children":["product-specifications"]
+  },
+  "tab-content.item#home2": {
+    "children": [
+      "shelf#home",
+      "info-card#home",
+      "rich-text#question",
+      "rich-text#link",
+      "newsletter"
+    ],
+    "props": {
+      "tabId": "home2"
+    }
+  },
+
 
   "share#default": {
     "props": {

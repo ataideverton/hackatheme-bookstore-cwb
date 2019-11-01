@@ -9,10 +9,13 @@
 .logoContainer{
   display:block;
 }
+.logoContainer img{
+  width:140px;
+}
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0;
 }
 
 .newsletter {
@@ -29,6 +32,14 @@
   font-size: 26px;
 }
 
+.specificationsTitle{
+  display: none;
+}
+
+.specificationsTableContainer{
+  padding: 0px 0px 0px 0px;
+}
+
 .inputGroup {
   padding-bottom: 4px;
   border-bottom: 2px solid #fff;
@@ -37,7 +48,7 @@
 }
 
 .buttonContainer {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .imageElement--storePrint {
@@ -85,7 +96,7 @@
   }
 
   .imageElement--storePrint {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     max-height: 600px;
   }
 }
