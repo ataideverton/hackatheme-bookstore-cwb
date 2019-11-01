@@ -18,7 +18,7 @@
       "flex-layout.col#footer-5-desktop",
       "flex-layout.col#footer-6-desktop"
     ],
-    "props": {
+    "props":{
       "blockClass": "inverted"
     }
   },
@@ -30,7 +30,7 @@
   },
   "rich-text#about-store":{
     "props":{
-      "text": "All stock and product photos are from photos.icons8.com"
+      "text": "All right reserved. Address: 123 St., 123 - New York - NY. Phone: 55 555-5555"
     }
   },
   "flex-layout.col#footer-4-desktop":{
@@ -71,7 +71,8 @@
   },
   "image#security":{
     "props": {
-      "src": "https://bookstoretheme.vteximg.com.br/arquivos/security.png"
+      "src": "https://bookstoretheme.vteximg.com.br/arquivos/security.png",
+      "maxHeight": "60px"
     }
   },
   "rich-text#social-title":{
