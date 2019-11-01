@@ -3,6 +3,7 @@
 }
 .footerLayout{
   border-top:2px solid #000;
+  margin-top:1rem;
 }
 .row--menu-row .rowContainer {
   align-items: flex-start;
