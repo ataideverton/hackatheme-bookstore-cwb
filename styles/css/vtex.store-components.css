@@ -66,17 +66,38 @@
 .imageElement {
   border-radius: 10px;
 }
-.imageElement--giftCard{
-  margin: 10px;
-}
 
 .imageElement--writerPhoto{
+  width: 100%;
+}
+
+.infoCardHeadline--nameInfocard{
+  margin: 0px;
+}
+
+.infoCardHeadline--nameInfocard{
+  margin: 0px;
+}
+
+.infoCardSubhead--nameInfocard{
+  display: none;
+}
+
+.imageElement--giftCard{
   width: 100%;
 }
 
 @media only screen and (min-width: 640px) {
   .newsletter .container {
     padding: 140px;
+  }
+
+  .infoCardSubhead--nameInfocard{
+    display: block;
+  }
+
+  .imageElement--giftCard{
+    width: auto;
   }
 
   .label {
