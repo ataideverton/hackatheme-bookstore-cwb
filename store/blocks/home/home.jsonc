@@ -4,7 +4,8 @@
       "flex-layout.row#first",
       "flex-layout.row#second",
       "flex-layout.row#third",
-      "flex-layout.row#fourth"
+      "flex-layout.row#fourth",
+      "flex-layout.row#fifth"
     ]
   },
 
@@ -57,7 +58,7 @@
   "info-card#one":{
     "props": {
       "imageUrl": "https://bookstoretheme.vteximg.com.br/arquivos/sideBanner1.png",
-      "callToActionText": "Primeiro InfoCard",
+      "callToActionText": "ver todos",
       "isFullModeStyle": true,
       "textPosition":"center",
       "blockClass": "sideImage"
@@ -67,7 +68,7 @@
   "info-card#two":{
     "props": {
       "imageUrl": "https://bookstoretheme.vteximg.com.br/arquivos/sideBanner2.png",
-      "callToActionText": "Primeiro InfoCard",
+      "callToActionText": "ver todos",
       "isFullModeStyle": true,
       "textPosition":"center",
       "blockClass": "sideImage"
@@ -77,7 +78,7 @@
   "info-card#three":{
     "props": {
       "imageUrl": "https://i.imgur.com/tIvu0NG.png",
-      "callToActionText": "Primeiro InfoCard",
+      "callToActionText": "ver todos",
       "isFullModeStyle": true,
       "textPosition":"center",
       "blockClass": "sideImage"
@@ -105,13 +106,14 @@
 
   "info-card#firstInfocard":{
     "props": {
-      "width": "30%",
-      "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2874&q=80",
-      "callToActionText": "Primeiro InfoCard",
+      "callToActionText": "ver todos",
+      "callToActionUrl": " ",
       "height": "100px",
       "isFullModeStyle": true,
-      "textPosition":"center"
-
+      "width": "30%",
+      "headline": "top",
+      "subhead": "muito top",
+      "textPosition":"left"
     }
   },
   "shelf#firstRow":{
@@ -132,12 +134,14 @@
 
   "info-card#secondInfocard":{
     "props": {
-      "width": "30%",
-      "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2874&q=80",
-      "callToActionText": "Segundo InfoCard",
+      "callToActionText": "ver todos",
+      "callToActionUrl": " ",
       "height": "100px",
       "isFullModeStyle": true,
-      "textPosition":"center"
+      "width": "30%",
+      "headline": "top",
+      "subhead": "muito top",
+      "textPosition":"left"
 
     }
   },
@@ -157,7 +161,7 @@
     }
   },
 
-  "flex-layout.row#fourth":{
+  "flex-layout.row#fourth": {
     "children": [
       "flex-layout.col#giftCardOne",
       "flex-layout.col#giftCardTwo",
@@ -167,49 +171,82 @@
 
   "flex-layout.col#giftCardOne": {
     "children": [
-      "info-card#giftCardOne"
+      "image#giftCardOne"
     ]
   },
 
   "flex-layout.col#giftCardTwo": {
     "children": [
-      "info-card#giftCardTwo"
+      "image#giftCardTwo"
     ]
   },
 
   "flex-layout.col#giftCardThree": {
     "children": [
-      "info-card#giftCardThree"
+      "image#giftCardThree"
     ]
   },
 
-  "info-card#giftCardOne": {
+  "image#giftCardOne": {
     "props": {
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "blockClass": "giftCard"
     }
   },
 
-  "info-card#giftCardTwo": {
+  "image#giftCardTwo": {
     "props": {
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "blockClass": "giftCard"
     }
   },
 
-  "info-card#giftCardThree": {
+  "image#giftCardThree": {
     "props": {
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "blockClass": "giftCard"
+    }
+  },
+  //
+  "flex-layout.row#fifth":{
+    "children": [
+      "info-card#fifthInfocard",
+      "shelf#fifthRow"
+    ],
+    "props":{
+      "blockClass": "shelfRow"
     }
   },
 
+  "info-card#fifthInfocard":{
+    "props": {
+      "callToActionText": "ver todos",
+      "callToActionUrl": " ",
+      "height": "100px",
+      "isFullModeStyle": true,
+      "width": "30%",
+      "headline": "top",
+      "subhead": "muito top",
+      "textPosition":"left"
+    }
+  },
+  "shelf#fifthRow":{
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 3,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "showTitle":false,
+        "paginationDotsVisibility": "hidden"
+      },
+    "height":"100"
+    }
+  },
+
+  //
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
