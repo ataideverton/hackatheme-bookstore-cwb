@@ -1,4 +1,29 @@
 {
+  "menu-item#desktop-menu":{
+    "props": {
+      "id": "menu-item-desktop-menu",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "All Categories",
+        "text": "All Categories"
+      },
+      "blockClass":"all-categories"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#desktop-menu"]
+  },
+  "vtex.menu@2.x:submenu#desktop-menu":{
+    "children": [
+      "vtex.menu@2.x:menu#notebooks-pens",
+      "vtex.menu@2.x:menu#books",
+      "vtex.menu@2.x:menu#office-supplies"
+    ]
+  },
+
   "menu-item#notebooks-pens": {
     "props": {
       "id": "menu-item-notebooks-pens",
