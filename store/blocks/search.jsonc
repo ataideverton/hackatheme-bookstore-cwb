@@ -79,6 +79,14 @@
       "width": "grow"
     }
   },
+
+  "flex-layout.col#separator":{
+    "props":{
+      "height":"10%"
+    }
+  },
+
+
   "flex-layout.row#searchtitle":{
     "children": ["search-title.v2"],
     "props": {
