@@ -1,7 +1,7 @@
 {
   "menu-item#desktop-menu":{
     "props": {
-      "id": "menu-item-desktop-menu",
+      "id": "menu-item-category-all",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -18,13 +18,30 @@
   },
   "vtex.menu@2.x:submenu#desktop-menu":{
     "children": [
-      "vtex.menu@2.x:menu#notebooks-pens",
-      "vtex.menu@2.x:menu#books",
-      "vtex.menu@2.x:menu#office-supplies"
-    ]
+      "vtex.menu@2.x:menu#all-submenu"
+    ],
+    "props":{
+      "blockClass":"allSubMenuBlock"
+    }
   },
 
-  "menu-item#notebooks-pens": {
+  "vtex.menu@2.x:menu#all-submenu":{
+    "children":[
+      "menu-item#comics",
+      "menu-item#fiction",
+      "menu-item#notebooks",
+      "menu-item#pens",
+      "menu-item#pencil-cases",
+      "menu-item#paper-basics",
+      "menu-item#staplers-punches"
+    ],
+    "props":{
+      "blockClass":"subMenus",
+      "orientation":"vertical"
+    }
+  },
+
+  "menu-item#all-submenu": {
     "props": {
       "id": "menu-item-notebooks-pens",
       "type": "custom",

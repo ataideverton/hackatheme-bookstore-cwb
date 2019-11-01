@@ -125,7 +125,7 @@
         "itemsPerPage": 5,
         "scroll": "ONE_BY_ONE",
         "arrows": true,
-        "titleText":"Se você gostou desse, pode se interessar por:",
+        "titleText":"Explore more Items",
         "paginationDotsVisibility": "hidden"
       },
     "height":"100"
@@ -148,7 +148,7 @@
   "tab-list.item#home1": {
     "props": {
       "tabId": "specifications",
-      "label": "Caracteristicas",
+      "label": "Specifications",
       "defaultActiveTab": true
     }
   },

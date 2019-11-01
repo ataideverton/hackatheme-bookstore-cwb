@@ -11,3 +11,11 @@
     border-radius: 5px;
     border: 5px;
 }
+
+.menuItem:nth-child(odd):hover{
+    background:lightgray;
+}
+
+.menuItem:nth-child(even):hover{
+    background:lightgray;
+}

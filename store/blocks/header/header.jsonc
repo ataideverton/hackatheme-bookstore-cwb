@@ -120,7 +120,7 @@
 
   "menu#menu-drawer-mobile": {
     "children": [
-      "menu-item#notebooks-pens",
+      "menu-item#notebooks",
       "menu-item#books",
       "menu-item#office-supplies"
     ],
