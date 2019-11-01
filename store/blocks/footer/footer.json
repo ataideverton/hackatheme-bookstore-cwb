@@ -30,7 +30,7 @@
   },
   "rich-text#about-store":{
     "props":{
-      "text": "All right reserved. Address: 123 St., 123 - New York - NY. Phone: 55 555-5555"
+      "text": "All right reserved. Pickup your product in our B&M Store - Address: 123 St., 123 - New York - NY. Phone: 55 555-5555"
     }
   },
   "flex-layout.col#footer-4-desktop":{
@@ -122,21 +122,27 @@
   "flex-layout.col#footer-7-desktop":{
     "children": [
       "rich-text#footer-bottom"
-    ]
+    ],
+    "props":{
+      "blockClass":"tright"
+    }
   },
   "flex-layout.col#footer-8-desktop":{
     "children": [
       "image#vtex"
-    ]
+    ],
+    "props":{
+      "blockClass":"tright"
+    }
   },
   "rich-text#footer-bottom":{
     "props":{
-      "text": "Lorem Ipsum"
+      "text": "The BookStore is the complete theme recomended for bookstore and grosseries. COD. 1234567889"
     }
   },
   "image#vtex":{
     "props": {
-      "src": "https://bookstoretheme.vteximg.com.br/arquivos/vtexlogo.jpg"
+      "src": "https://bookstoretheme.vteximg.com.br/arquivos/vtexio.png"
     }
   },
 
