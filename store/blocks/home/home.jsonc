@@ -6,7 +6,8 @@
       "flex-layout.row#second",
       "flex-layout.row#third",
       "flex-layout.row#fourth",
-      "flex-layout.row#fifth"
+      "flex-layout.row#fifth",
+      "newsletter"
     ]
   },
 
@@ -346,6 +347,15 @@
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
       "textAlignment": "center"
+    }
+  },
+
+  "newsletter":{
+    "props":{
+      "label": "Newsletter",
+      "placeholder": "e-mail",
+      "submit":"submit",
+      "blockClass": "newsletterFooter"
     }
   },
 
