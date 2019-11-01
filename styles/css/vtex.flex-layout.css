@@ -35,3 +35,11 @@
 .flexCol--switcherMobileCol {
   width: 20%;
 }
+
+.flexRow--shelfRow{
+  margin: 65px 0px;
+}
+
+.flexRow--carouselRow {
+  margin: 30px 10px;
+}
