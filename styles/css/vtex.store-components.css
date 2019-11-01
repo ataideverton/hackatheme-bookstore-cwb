@@ -9,9 +9,6 @@
 .logoContainer{
   display:block;
 }
-.logoContainer img{
-  width:140px;
-}
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
@@ -70,7 +67,6 @@
   border-radius: 10px;
 }
 .imageElement--giftCard{
-  width: 100%;
   margin: 10px;
 }
 
