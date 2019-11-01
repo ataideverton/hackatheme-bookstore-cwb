@@ -1,0 +1,6 @@
+.openIconContainer:after{
+    content:"ALL CATEGORIES >";
+    display:inline-block;
+    vertical-align:top;
+    padding:.2rem 0 0 1rem;
+}
