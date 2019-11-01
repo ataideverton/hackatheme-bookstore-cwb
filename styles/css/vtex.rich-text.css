@@ -57,6 +57,17 @@
   font-weight: 700;
 }
 
+.heading-level-3{
+  font-family: Montserrat;
+}
+
+.heading-level-3::after{
+  content: "";
+  background: url(https://i.imgur.com/JJQbJ2x.png);
+  width: 64px;
+  height: 64px;
+  display: block;
+}
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;
