@@ -48,3 +48,13 @@
 .flexRow--institutionalRow{
   margin: 50px 0px;
 }
+
+.flexCol--sideBar{
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .flexCol--sideBar{
+      display: block;
+  }
+}

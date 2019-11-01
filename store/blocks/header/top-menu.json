@@ -4,7 +4,8 @@
       "menu-item#shop",
       "menu-item#about-us",
       "menu-item#outlet",
-      "menu-item#best-sellers"
+      "menu-item#best-sellers",
+      "menu-item#weeklyWriter"
     ]
   },
   "menu-item#shop": {
@@ -20,6 +21,22 @@
         "tagTitle": "Shop",
         "text": "Shop"
       }
+    }
+  },
+  "menu-item#weeklyWriter":{
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/weekly-writer",
+        "noFollow": false,
+        "tagTitle": "Writer of the Week",
+        "text": "Writer of the Week"
+      },
+      "blockClass":"writerEmphasis"
     }
   },
   "menu-item#about-us": {
