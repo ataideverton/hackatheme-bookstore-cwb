@@ -3,7 +3,7 @@
 }
 .flexRow--inverted{
   background:#eee;
-  margin-bottom:1rem;
+  margin:1rem 0;
 }
 .flexColChild--tright{
   text-align:right;
