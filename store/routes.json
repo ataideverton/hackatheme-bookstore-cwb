@@ -4,5 +4,11 @@
   },
   "store.custom#shop": {
     "path": "/shop"
+  },
+  "store.custom#policy": {
+    "path": "/policy"
+  },
+  "store.custom#payment-delivery": {
+    "path": "/payment-delivery"
   }
 }

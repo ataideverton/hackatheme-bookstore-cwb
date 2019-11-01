@@ -1,0 +1,150 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "header-row#3-desktop"
+    ]
+  },
+
+  "header-row#1-desktop": {
+    "children": [
+      "notification.bar#home"
+    ],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "FREE SHIPPING TO THE WHOLE COUNTRY!"
+    }
+  },
+  "header-row#2-desktop": {
+    "children": [
+      "logo#desktop",
+      "header-spacer",
+      "vtex.menu@2.x:menu#websites",
+      "header-spacer",
+      "locale-switcher",
+      "login",
+      "minicart"
+    ],
+    "props": {
+      "sticky": "true"
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180px"
+    }
+  },
+  "header-row#3-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#main-menu",
+      "header-spacer",
+      "search-bar",
+      "header-spacer"
+    ],
+    "props": {
+      "inverted": "true",
+      "sticky": "true"
+    }
+  },
+  
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "",
+      "labelButtonFinishShopping": "Go to checkout",
+      "enableQuantitySelector": true,
+      "maxQuantity": 10,
+      "labelClasses": "gray"
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile",
+      "header-row#2-mobile"
+    ]
+  },
+  "header-row#1-mobile": {
+    "children": [
+      "drawer#drawer-mobile",
+      "logo#mobile",
+      "header-spacer",
+      "login",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "drawer#drawer-mobile": {
+    "children": [
+      "menu#menu-drawer-mobile"
+    ]
+  },
+  "header-row#2-mobile":{
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "inverted": "true",
+      "sticky": "true"
+    }
+  },
+
+  "menu#menu-drawer-mobile": {
+    "children": [
+      "menu-item#notebooks-pens",
+      "menu-item#books",
+      "menu-item#office-supplies",
+      "vtex.menu@2.x:menu#websites"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "vtex.menu@2.x:menu#main-menu": {
+    "children": [
+      "menu-item#desktop-menu"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "120px"
+    }
+  }
+}

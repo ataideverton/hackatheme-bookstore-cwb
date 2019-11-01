@@ -14,7 +14,9 @@
   margin: 0 auto;
   padding: 0;
 }
-
+.logoImage{
+  min-width:120px;
+}
 .newsletter {
   max-width: 1528px;
   margin: 0 auto;
