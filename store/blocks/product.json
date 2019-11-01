@@ -1,13 +1,17 @@
 {
+
+
+
   "store.product": {
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "shelf.relatedProducts",
-      "product-reviews",
-      "product-questions-and-answers"
+      "tab-layout#home"
     ]
   },
+
+
+
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 4
@@ -23,9 +27,15 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+    "children": ["flex-layout.col#stack","product-description" ,"flex-layout.col#spacer","flex-layout.col#right-col"]
   },
 
+  "flex-layout.col#spacer":{
+    "props":{
+      "width":"10%" 
+    }
+  },
+  
   "stack-layout": {
     "children": [
       "flex-layout.row#product-image",
@@ -45,7 +55,7 @@
   "flex-layout.col#stack": {
     "children": ["stack-layout"],
     "props": {
-      "width": "60%",
+      "width": "45%",
       "rowGap": 0
     }
   },
@@ -78,6 +88,9 @@
     ]
   },
 
+
+
+
   "product-price#product-details": {
     "props": {
       "showInstallments": true,
@@ -92,6 +105,74 @@
     },
     "children": ["buy-button"]
   },
+  
+  "shelf#firstRow":{
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText":"Quem comprou tambem visualizou...",
+        "paginationDotsVisibility": "hidden"
+      },
+    "height":"100"
+    }
+  },
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ],
+    "props": {
+      "blockClass": "home"
+    }
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#home1",
+      "tab-list.item#home2"
+      ]
+  },
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "author",
+      "label": "O Autor",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "critics",
+      "label": "A critica"
+    }
+  },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#home1",
+      "tab-content.item#home2"
+    ]
+  },
+  "tab-content.item#home1": {
+    "props": {
+      "tabId": "home1"
+    }
+  },
+  "tab-content.item#home2": {
+    "children": [
+      "shelf#home",
+      "info-card#home",
+      "rich-text#question",
+      "rich-text#link",
+      "newsletter"
+    ],
+    "props": {
+      "tabId": "home2"
+    }
+  },
+
 
   "share#default": {
     "props": {
