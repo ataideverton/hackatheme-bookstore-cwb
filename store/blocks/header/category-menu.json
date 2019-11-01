@@ -117,7 +117,7 @@
       "menu-item#comics",
       "menu-item#fiction",
       "menu-item#travel",
-      "menu-item#travel-all"
+      "menu-item#books-all"
     ]
   },
   "menu-item#comics": {
@@ -165,9 +165,9 @@
       }
     }
   },
-  "menu-item#travel-all": {
+  "menu-item#books-all": {
     "props": {
-      "id": "menu-item-travel-all",
+      "id": "menu-item-books-all",
       "type": "custom",
       "iconId": null,
       "highlight": false,

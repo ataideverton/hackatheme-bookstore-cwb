@@ -1,16 +1,10 @@
-.flexRow--deals {
-  background-color: #a7afbd;
-  padding: 14px 0px;
+.flexColChild {
+  height: auto !important;
 }
-
-.flexRow--deals .stretchChildrenWidth {
-  align-items: center;
+.flexRow--inverted{
+  background:#eee;
+  margin-bottom:1rem;
 }
-
-.flexRow--deals .flexCol {
-  align-items: center;
-}
-
 .flexCol--filterCol {
   max-width: 500px;
   min-width: 230px;
