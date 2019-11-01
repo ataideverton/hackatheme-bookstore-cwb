@@ -131,7 +131,8 @@
       "width": "30%",
       "headline": "top",
       "subhead": "muito top",
-      "textPosition":"left"
+      "textPosition":"left",
+      "blockClass": "nameInfocard"
     }
   },
   "shelf#firstRow":{
@@ -159,7 +160,8 @@
       "width": "30%",
       "headline": "top",
       "subhead": "muito top",
-      "textPosition":"left"
+      "textPosition":"left",
+      "blockClass": "nameInfocard"
 
     }
   },
@@ -245,7 +247,8 @@
       "width": "30%",
       "headline": "top",
       "subhead": "muito top",
-      "textPosition":"left"
+      "textPosition":"left",
+      "blockClass": "nameInfocard"
     }
   },
   "shelf#fifthRow":{
