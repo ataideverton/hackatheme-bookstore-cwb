@@ -1,0 +1,11 @@
+.productBrand{
+    display: block;
+    line-height: 25px;
+    font-family: quicksand;
+    font-weight: 700;
+}
+
+.sellingPrice{
+    font-family: quicksand;
+    font-weight: 700;
+}
