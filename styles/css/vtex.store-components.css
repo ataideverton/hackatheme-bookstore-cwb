@@ -121,7 +121,7 @@
 }
 
 .infoCardHeadline {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat, sans-serif';
   font-size: 70px;
   font-weight: 700;
   line-height: 70px;
@@ -133,7 +133,7 @@
 }
 
 .infoCardSubhead {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat, sans-serif';
   color: #999999;
   font-size: 23px;
   font-weight: 300;
@@ -155,7 +155,7 @@ padding: 10px;
 font-size: 30px;
 margin: 3px 10px;
 color: #333333;
-font-family: montserrat;
+font-family: 'Montserrat, sans-serif';
 }
 
 .form--newsletterFooter{
