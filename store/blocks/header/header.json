@@ -35,8 +35,8 @@
   "header-row#2-desktop": {
     "children": [
       "logo#desktop",
-      "vtex.menu@2.x:menu#websites",
       "header-spacer",
+      "vtex.menu@2.x:menu#websites",
       "header-spacer",
       "locale-switcher",
       "login",

@@ -12,9 +12,84 @@
         "tagTitle": "Notebooks e Pens",
         "text": "Notebooks e Pens"
       }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#notebooks-pens"]
+  },
+  "vtex.menu@2.x:submenu.accordion#notebooks-pens": {
+    "children": ["vtex.menu@2.x:menu#notebooks-pens"]
+  },
+  "vtex.menu@2.x:menu#notebooks-pens": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#notebooks",
+      "menu-item#pencil-cases",
+      "menu-item#pens",
+      "menu-item#notebooks-pens-all"
+    ]
+  },
+  "menu-item#notebooks": {
+    "props": {
+      "id": "menu-item-notebooks",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/notebooks---pens/notebooks",
+        "noFollow": true,
+        "tagTitle": "Notebooks",
+        "text": "Notebooks"
+      }
     }
   },
-  
+  "menu-item#pencil-cases": {
+    "props": {
+      "id": "menu-item-pencil-cases",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/notebooks---pens/pencil-cases",
+        "noFollow": true,
+        "tagTitle": "Pencil Cases",
+        "text": "Pencil Cases"
+      }
+    }
+  },
+  "menu-item#pens": {
+    "props": {
+      "id": "menu-item-pens",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/notebooks---pens/pens",
+        "noFollow": true,
+        "tagTitle": "Pens",
+        "text": "Pens"
+      }
+    }
+  },
+  "menu-item#notebooks-pens-all": {
+    "props": {
+      "id": "menu-item-notebooks-pens-all",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/notebooks---pens",
+        "noFollow": true,
+        "tagTitle": "See All",
+        "text": "See All"
+      }
+    }
+  },
+
   "menu-item#books": {
     "props": {
       "id": "menu-item-books",
@@ -27,6 +102,81 @@
         "noFollow": true,
         "tagTitle": "Books",
         "text": "Books"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#books"]
+  },
+  "vtex.menu@2.x:submenu.accordion#books": {
+    "children": ["vtex.menu@2.x:menu#books"]
+  },
+  "vtex.menu@2.x:menu#books": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#comics",
+      "menu-item#fiction",
+      "menu-item#travel",
+      "menu-item#travel-all"
+    ]
+  },
+  "menu-item#comics": {
+    "props": {
+      "id": "menu-item-comics",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/books/comics",
+        "noFollow": true,
+        "tagTitle": "Comics",
+        "text": "Comics"
+      }
+    }
+  },
+  "menu-item#fiction": {
+    "props": {
+      "id": "menu-item-fiction",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/books/fiction",
+        "noFollow": true,
+        "tagTitle": "Fiction",
+        "text": "Fiction"
+      }
+    }
+  },
+  "menu-item#travel": {
+    "props": {
+      "id": "menu-item-travel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/books/travel",
+        "noFollow": true,
+        "tagTitle": "Travel",
+        "text": "Travel"
+      }
+    }
+  },
+  "menu-item#travel-all": {
+    "props": {
+      "id": "menu-item-travel-all",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/books",
+        "noFollow": true,
+        "tagTitle": "See All",
+        "text": "See All"
       }
     }
   },
@@ -43,6 +193,81 @@
         "noFollow": true,
         "tagTitle": "Office Supplies",
         "text": "Office Supplies"
+      }
+    },
+  "blocks": ["vtex.menu@2.x:submenu.accordion#office-supplies"]
+  },
+  "vtex.menu@2.x:submenu.accordion#office-supplies": {
+    "children": ["vtex.menu@2.x:menu#office-supplies"]
+  },
+  "vtex.menu@2.x:menu#office-supplies": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#clips-fasteners",
+      "menu-item#paper-basics",
+      "menu-item#staplers-punches",
+      "menu-item#office-all"
+    ]
+  },
+  "menu-item#clips-fasteners": {
+    "props": {
+      "id": "menu-item-clips-fasteners",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/office-supplies/clips---fasteners",
+        "noFollow": true,
+        "tagTitle": "Clips & Fasteners",
+        "text": "Clips & Fasteners"
+      }
+    }
+  },
+  "menu-item#paper-basics": {
+    "props": {
+      "id": "menu-item-paper-basics",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/office-supplies/paper-basics",
+        "noFollow": true,
+        "tagTitle": "Paper Basics",
+        "text": "Paper Basics"
+      }
+    }
+  },
+  "menu-item#staplers-punches": {
+    "props": {
+      "id": "menu-item-staplers-punches",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/office-supplies/staplers---punches",
+        "noFollow": true,
+        "tagTitle": "Staplers & Punches",
+        "text": "Staplers & Punches"
+      }
+    }
+  },
+  "menu-item#office-all": {
+    "props": {
+      "id": "menu-item-office-all",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/office-supplies",
+        "noFollow": true,
+        "tagTitle": "See All",
+        "text": "See All"
       }
     }
   }

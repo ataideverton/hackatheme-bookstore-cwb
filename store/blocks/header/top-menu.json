@@ -2,7 +2,9 @@
   "vtex.menu@2.x:menu#websites": {
     "children": [
       "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#about-us",
+      "menu-item#outlet",
+      "menu-item#best-sellers"
     ]
   },
   "menu-item#shop": {
@@ -13,7 +15,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/shop",
         "noFollow": false,
         "tagTitle": "Shop",
         "text": "Shop"
@@ -30,8 +32,38 @@
         "type": "internal",
         "href": "/about-us",
         "noFollow": false,
-        "tagTitle": "about-us",
+        "tagTitle": "About Us",
         "text": "About Us"
+      }
+    }
+  },
+  "menu-item#outlet": {
+    "props": {
+      "id": "menu-item-outlet",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/outlet",
+        "noFollow": false,
+        "tagTitle": "Outlet",
+        "text": "Outlet"
+      }
+    }
+  },
+  "menu-item#best-sellers": {
+    "props": {
+      "id": "menu-item-best-sellers",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/best-sellers",
+        "noFollow": false,
+        "tagTitle": "Best Sellers",
+        "text": "Best Sellers"
       }
     }
   }
