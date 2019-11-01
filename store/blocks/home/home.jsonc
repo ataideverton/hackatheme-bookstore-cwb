@@ -207,7 +207,7 @@
       "blockClass": "giftCard"
     }
   },
-  //
+
   "flex-layout.row#fifth":{
     "children": [
       "info-card#fifthInfocard",
@@ -246,7 +246,6 @@
     }
   },
 
-  //
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
