@@ -4,6 +4,9 @@
     font-family: quicksand;
     font-weight: 700;
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .sellingPrice{
@@ -13,4 +16,7 @@
 
 .productBrand {
     font-family: 'Montserrat';
+}
+.nameContainer{
+    padding:12px 0px
 }
