@@ -15,21 +15,11 @@
     "children": [
       "header-row#1-desktop",
       "header-row#2-desktop",
-      "header-row#3-desktop",
-      "header-row#4-desktop"
+      "header-row#3-desktop"
     ]
   },
 
   "header-row#1-desktop": {
-    "children": [
-      "telemarketing"
-    ],
-    "props": {
-      "fullWidth": true
-    }
-  },
-
-  "header-row#2-desktop": {
     "children": [
       "notification.bar#home"
     ],
@@ -39,34 +29,21 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "content": "FREE SHIPPING TO THE WHOLE COUNTRY!"
     }
   },
-  "header-row#3-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "header-spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ],
-    "props": {
-      "blockClass": "menu-link",
-      "inverted": "true"
-    }
-  },
-  "header-row#4-desktop": {
+  "header-row#2-desktop": {
     "children": [
       "logo#desktop",
-      "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
+      "vtex.menu@2.x:menu#websites",
       "header-spacer",
-      "search-bar",
       "locale-switcher",
       "login",
       "minicart"
     ],
     "props": {
-      "sticky": true,
-      "blockClass": "main-header"
+      "sticky": "true"
     }
   },
   "logo#desktop": {
@@ -77,7 +54,19 @@
       "width": "180"
     }
   },
-
+  "header-row#3-desktop": {
+    "children": [
+      "drawer#drawer-desktop",
+      "header-spacer",
+      "search-bar",
+      "header-spacer"
+    ],
+    "props": {
+      "inverted": "true",
+      "sticky": "true"
+    }
+  },
+  
   "minicart": {
     "blocks": [
       "product-summary"
@@ -102,7 +91,7 @@
   },
   "header-row#1-mobile": {
     "children": [
-      "drawer",
+      "drawer#drawer-mobile",
       "logo#mobile",
       "header-spacer",
       "login",
@@ -113,7 +102,12 @@
       "blockClass": "main-header-mobile"
     }
   },
-  "drawer": {
+  "drawer#drawer-mobile": {
+    "children": [
+      "menu#drawer"
+    ]
+  },
+  "drawer#drawer-desktop": {
     "children": [
       "menu#drawer"
     ]
@@ -121,9 +115,9 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-clothing",
-      "menu-item#category-decoration",
-      "menu-item#custom-sale"
+      "menu-item#notebooks-pens",
+      "menu-item#books",
+      "menu-item#office-supplies"
     ],
     "props": {
       "orientation": "vertical"
