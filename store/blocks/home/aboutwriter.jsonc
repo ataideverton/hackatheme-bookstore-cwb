@@ -43,7 +43,7 @@
 
     "rich-text#writerText":{
         "props":{
-            "text": "### Seu Texto Aqui"
+            "text": "### Your title goes here"
         }
     },
   
@@ -74,7 +74,7 @@
     },
     "rich-text#title":{
         "props":{
-            "text":"### Prévia do Livro",
+            "text":"### Book's Preview",
             "blockClass": "titlePreview "
         }
     },

@@ -187,45 +187,60 @@
       "flex-layout.col#giftCardOne",
       "flex-layout.col#giftCardTwo",
       "flex-layout.col#giftCardThree"
-    ]
+    ],
+    "props": {
+      "blockClass": "fourthSection"
+    }
   },
 
   "flex-layout.col#giftCardOne": {
     "children": [
       "image#giftCardOne"
-    ]
+    ],
+    "props": {
+      "blockClass": "giftCardParent"
+    }
   },
 
   "flex-layout.col#giftCardTwo": {
     "children": [
       "image#giftCardTwo"
-    ]
+    ],
+    "props": {
+      "blockClass": "giftCardParent"
+    }
   },
 
   "flex-layout.col#giftCardThree": {
     "children": [
       "image#giftCardThree"
-    ]
+    ],
+    "props": {
+      "blockClass": "giftCardParent"
+    }
   },
 
   "image#giftCardOne": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "blockClass": "giftCard"
+      "blockClass": "giftCard",
+      "maxWidth": "100%"
     }
   },
 
   "image#giftCardTwo": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "blockClass": "giftCard"
+      "blockClass": "giftCard",
+      "maxWidth": "100%"
     }
   },
 
   "image#giftCardThree": {
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "blockClass": "giftCard"
+      "blockClass": "giftCard",
+      "maxWidth": "100%"
     }
   },
 

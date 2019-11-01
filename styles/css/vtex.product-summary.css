@@ -10,10 +10,13 @@
 }
 
 .sellingPrice{
-    font-family: quicksand;
+    font-family: 'Montserrat';
     font-weight: 700;
 }
 
+.productBrand {
+    font-family: 'Montserrat';
+}
 .nameContainer{
     padding:12px 0px
 }
