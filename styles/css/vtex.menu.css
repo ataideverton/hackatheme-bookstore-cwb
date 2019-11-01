@@ -1,4 +1,10 @@
-
+.menuItem--all-categories .styledLinkContainer .styledLink{
+    color:#fff;
+}
+.submenu .styledLinkContainer .styledLink{
+    color:#000;
+    font-size:1rem;
+}
 .menuItem--writerEmphasis{
     background: #8abbe8;
     margin: 3px;
