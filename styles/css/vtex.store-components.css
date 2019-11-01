@@ -1,24 +1,21 @@
 .notificationBarContainer {
-  background-color: #E6F1E6;
-  color: #03034E;
   font-weight: 700;
   font-size: 12px;
-  text-decoration: underline;
 }
-
-.searchBarContainer {
-  max-width: 265px;
+.notificationBarInner{
+  min-height: auto;
+  padding: .2rem;
 }
-
+.logoContainer{
+  display:block;
+}
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
-  background-color: #E6F1E6;
   padding: 0px;
 }
 
 .newsletter {
-  background-color: #03054E;
   max-width: 1528px;
   margin: 0 auto;
 }
