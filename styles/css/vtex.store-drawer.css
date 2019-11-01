@@ -1,6 +1,8 @@
-.openIconContainer:after{
-    content:"ALL CATEGORIES >";
-    display:inline-block;
-    vertical-align:top;
-    padding:.2rem 0 0 1rem;
+@media only screen and (min-width: 640px) {
+    .openIconContainer:after{
+        content:"ALL CATEGORIES >";
+        display:inline-block;
+        vertical-align:top;
+        padding:.2rem 0 0 1rem;
+    }
 }

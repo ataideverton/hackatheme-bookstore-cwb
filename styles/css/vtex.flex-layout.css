@@ -5,6 +5,9 @@
   background:#eee;
   margin-bottom:1rem;
 }
+.flexColChild--tright{
+  text-align:right;
+}
 .flexCol--filterCol {
   max-width: 500px;
   min-width: 230px;
