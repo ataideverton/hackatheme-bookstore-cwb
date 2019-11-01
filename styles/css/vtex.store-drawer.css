@@ -1,4 +1,4 @@
-.openIconContainer:after{
+.openIconContainer::after{
     content:"ALL CATEGORIES >";
     display:inline-block;
     vertical-align:top;

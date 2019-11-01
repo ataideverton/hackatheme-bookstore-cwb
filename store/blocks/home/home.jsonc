@@ -2,6 +2,7 @@
   "store.home": {
     "blocks": [
       "flex-layout.row#first",
+      "slider-layout#mobile",
       "flex-layout.row#second",
       "flex-layout.row#third",
       "flex-layout.row#fourth",
@@ -28,6 +29,22 @@
     }
   },
 
+  "slider-layout#mobile":{
+    "children":[
+      "info-card#one",
+      "info-card#two",
+      "info-card#three"
+    ],
+    "props":{
+      "blockClass": "mobileSlider",
+      "itemsPerPage":{
+        "desktop": 1, 
+        "tablet": 1, 
+        "phone": 1 
+   }
+    }
+  },
+
   "flex-layout.col#sideImages":{
     "children":[
       "flex-layout.row#firstImage",
@@ -35,7 +52,8 @@
       "flex-layout.row#thirdImage"
     ],
     "props":{ 
-      "width": "30%"
+      "width": "30%",
+      "blockClass": "sideBar"
     }
   },
   "flex-layout.row#firstImage":{
