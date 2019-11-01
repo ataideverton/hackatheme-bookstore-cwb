@@ -21,7 +21,7 @@
 
   "header-row#1-desktop": {
     "children": [
-      //"notification.bar#home"
+      // "notification.bar#home"
     ],
     "props": {
       "fullWidth": "true"
