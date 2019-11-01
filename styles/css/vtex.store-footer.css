@@ -1,7 +1,9 @@
 .row--menu-row {
   padding-right: 24px;
 }
-
+.footerLayout{
+  border-top:2px solid #000;
+}
 .row--menu-row .rowContainer {
   align-items: flex-start;
 }

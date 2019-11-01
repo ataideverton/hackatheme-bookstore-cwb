@@ -3,9 +3,9 @@
   text-align: center;
   justify-content: center;
 }
-
-.container--deals .paragraph {
-  margin: 0;
+.heading-level-4{
+  margin: .5rem 0 0.1rem;
+  font-weight: 700;
 }
 
 .container--link {
