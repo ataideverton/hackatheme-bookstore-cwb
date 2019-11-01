@@ -27,13 +27,9 @@
 
   "vtex.menu@2.x:menu#all-submenu":{
     "children":[
-      "menu-item#comics",
-      "menu-item#fiction",
-      "menu-item#notebooks",
-      "menu-item#pens",
-      "menu-item#pencil-cases",
-      "menu-item#paper-basics",
-      "menu-item#staplers-punches"
+      "menu-item#books",
+      "menu-item#notebooks-pens",
+      "menu-item#office-supplies"
     ],
     "props":{
       "blockClass":"subMenus",
@@ -41,7 +37,7 @@
     }
   },
 
-  "menu-item#all-submenu": {
+  "menu-item#notebooks-pens": {
     "props": {
       "id": "menu-item-notebooks-pens",
       "type": "custom",
@@ -67,8 +63,7 @@
     "children": [
       "menu-item#notebooks",
       "menu-item#pencil-cases",
-      "menu-item#pens",
-      "menu-item#notebooks-pens-all"
+      "menu-item#pens"
     ]
   },
   "menu-item#notebooks": {
@@ -116,21 +111,6 @@
       }
     }
   },
-  "menu-item#notebooks-pens-all": {
-    "props": {
-      "id": "menu-item-notebooks-pens-all",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/notebooks---pens",
-        "noFollow": true,
-        "tagTitle": "See All",
-        "text": "See All"
-      }
-    }
-  },
 
   "menu-item#books": {
     "props": {
@@ -158,8 +138,7 @@
     "children": [
       "menu-item#comics",
       "menu-item#fiction",
-      "menu-item#travel",
-      "menu-item#books-all"
+      "menu-item#travel"
     ]
   },
   "menu-item#comics": {
@@ -249,8 +228,7 @@
     "children": [
       "menu-item#clips-fasteners",
       "menu-item#paper-basics",
-      "menu-item#staplers-punches",
-      "menu-item#office-all"
+      "menu-item#staplers-punches"
     ]
   },
   "menu-item#clips-fasteners": {

@@ -34,16 +34,18 @@
     },
     "flex-layout.col#writer-text":{
         "children":[
-            "rich-text#writerText"
+            "rich-text#aboutAuthor",
+            "rich-text#firstPage"
         ],
         "props":{
             "blockClass": "rightColInst"
         }
     },
 
-    "rich-text#writerText":{
+    "rich-text#aboutAuthor":{
         "props":{
-            "text": "### Your title goes here"
+            "text": "### About the author",
+            "blockClass":"aboutAuthor"
         }
     },
   

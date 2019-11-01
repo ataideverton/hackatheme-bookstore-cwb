@@ -93,4 +93,8 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+
+  .container--aboutAuthor {
+    max-height: 75px;
+  }
 }

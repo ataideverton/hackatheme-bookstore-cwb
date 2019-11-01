@@ -13,7 +13,6 @@
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [ 
-      "flex-layout.col#footer-3-desktop",
       "flex-layout.col#footer-4-desktop",
       "flex-layout.col#footer-5-desktop",
       "flex-layout.col#footer-6-desktop"
