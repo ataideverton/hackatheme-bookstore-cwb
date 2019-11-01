@@ -1,34 +1,242 @@
 {
   "store.home": {
     "blocks": [
-      "carousel#home",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
-      "shelf#home",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#first",
+      "flex-layout.row#second",
+      "flex-layout.row#third",
+      "flex-layout.row#fourth"
     ]
   },
 
-  "carousel#home": {
+  "flex-layout.row#first":{
+    "children":[
+      "flex-layout.col#carousel",
+      "flex-layout.col#sideImages"
+    ],
     "props": {
-      "autoplay": false,
-      "banners": [
+      "blockClass" : "carouselRow"
+    }
+  },
+
+  "flex-layout.col#carousel":{
+    "children":[
+      "list-context.image-list#demo"
+    ],
+    "props":{
+      "width": "70%"
+    }
+  },
+
+  "flex-layout.col#sideImages":{
+    "children":[
+      "flex-layout.row#firstImage",
+      "flex-layout.row#secondImage",
+      "flex-layout.row#thirdImage"
+    ],
+    "props":{ 
+      "width": "30%"
+    }
+  },
+  "flex-layout.row#firstImage":{
+    "children":[
+      "info-card#one"
+    ]
+  },
+  "flex-layout.row#secondImage":{
+    "children":[
+      "info-card#two"
+    ]
+
+  },
+  "flex-layout.row#thirdImage":{
+    "children":[
+      "info-card#three"
+    ]
+  },
+
+  "info-card#one":{
+    "props": {
+      "imageUrl": "https://bookstoretheme.vteximg.com.br/arquivos/sideBanner1.png",
+      "callToActionText": "Primeiro InfoCard",
+      "isFullModeStyle": true,
+      "textPosition":"center",
+      "blockClass": "sideImage"
+
+    }
+  },
+  "info-card#two":{
+    "props": {
+      "imageUrl": "https://bookstoretheme.vteximg.com.br/arquivos/sideBanner2.png",
+      "callToActionText": "Primeiro InfoCard",
+      "isFullModeStyle": true,
+      "textPosition":"center",
+      "blockClass": "sideImage"
+
+    }
+  },
+  "info-card#three":{
+    "props": {
+      "imageUrl": "https://i.imgur.com/tIvu0NG.png",
+      "callToActionText": "Primeiro InfoCard",
+      "isFullModeStyle": true,
+      "textPosition":"center",
+      "blockClass": "sideImage"
+
+    }
+  },
+  "flex-layout.row#second":{
+    "children": [
+      "info-card#firstInfocard",
+      "shelf#firstRow"
+    ],
+    "props":{
+      "blockClass": "shelfRow"
+    }
+  },
+  "flex-layout.row#third":{
+    "children": [
+      "info-card#secondInfocard",
+      "shelf#secondRow"
+    ],
+    "props":{
+      "blockClass": "shelfRow"
+    }
+  },
+
+  "info-card#firstInfocard":{
+    "props": {
+      "width": "30%",
+      "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2874&q=80",
+      "callToActionText": "Primeiro InfoCard",
+      "height": "100px",
+      "isFullModeStyle": true,
+      "textPosition":"center"
+
+    }
+  },
+  "shelf#firstRow":{
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 3,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "showTitle":false,
+        "paginationDotsVisibility": "hidden"
+      },
+    "height":"100"
+    }
+  },
+
+  "info-card#secondInfocard":{
+    "props": {
+      "width": "30%",
+      "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2874&q=80",
+      "callToActionText": "Segundo InfoCard",
+      "height": "100px",
+      "isFullModeStyle": true,
+      "textPosition":"center"
+
+    }
+  },
+  "shelf#secondRow":{
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 3,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "showTitle":false,
+        "paginationDotsVisibility": "hidden"
+      },
+    "height":"100"
+    }
+  },
+
+  "flex-layout.row#fourth":{
+    "children": [
+      "flex-layout.col#giftCardOne",
+      "flex-layout.col#giftCardTwo",
+      "flex-layout.col#giftCardThree"
+    ]
+  },
+
+  "flex-layout.col#giftCardOne": {
+    "children": [
+      "info-card#giftCardOne"
+    ]
+  },
+
+  "flex-layout.col#giftCardTwo": {
+    "children": [
+      "info-card#giftCardTwo"
+    ]
+  },
+
+  "flex-layout.col#giftCardThree": {
+    "children": [
+      "info-card#giftCardThree"
+    ]
+  },
+
+  "info-card#giftCardOne": {
+    "props": {
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#giftCardTwo": {
+    "props": {
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#giftCardThree": {
+    "props": {
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 650,
+      "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+          "description": "something something"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+          "description": "something something"
         }
       ],
-      "height": 720,
-      "showArrows": true,
-      "showDots": true
+      "blockClass":"mainImage"
+    }
+  },
+
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showPaginationDots":"never"
     }
   },
 

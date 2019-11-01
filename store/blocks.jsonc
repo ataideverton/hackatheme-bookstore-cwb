@@ -36,10 +36,9 @@
       "product-summary-add-to-list-button",
       "stack-layout#prodsum",
       "product-summary-name",
+      "product-summary-description",
       "product-rating-inline",
-      "product-summary-space",
       "product-summary-price",
-      "product-identifier.summary",
       "product-summary-buy-button"
     ]
   },
