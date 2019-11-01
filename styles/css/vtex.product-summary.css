@@ -7,6 +7,10 @@
 }
 
 .sellingPrice{
-    font-family: quicksand;
+    font-family: 'Montserrat';
     font-weight: 700;
+}
+
+.productBrand {
+    font-family: 'Montserrat';
 }
